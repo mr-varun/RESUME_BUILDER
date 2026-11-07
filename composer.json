@@ -1,6 +1,7 @@
 {
     "name": "resumeforge/app",
     "description": "Production-ready Resume / CV / Biodata Builder",
+    "license": "MIT",
     "require": {
         "php": ">=8.0",
         "mpdf/mpdf": "^8.2"
