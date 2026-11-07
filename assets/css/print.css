@@ -1,0 +1,43 @@
+/* Print stylesheet — applies when printing from browser */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+
+  /* Hide everything except the document content */
+  .wizard-topbar,
+  .step-tabs,
+  .wizard-nav,
+  .wizard-form-panel,
+  .preview-header,
+  .sidebar,
+  .main-content > *:not(.doc-preview),
+  nav, header, footer,
+  .no-print {
+    display: none !important;
+  }
+
+  .wizard-preview-panel,
+  .preview-iframe {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  }
+
+  /* Template-specific print fixes */
+  .page {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+  }
+}

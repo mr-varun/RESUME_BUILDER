@@ -1,0 +1,16 @@
+{
+    "name": "resumeforge/app",
+    "description": "Production-ready Resume / CV / Biodata Builder",
+    "require": {
+        "php": ">=8.0",
+        "mpdf/mpdf": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
